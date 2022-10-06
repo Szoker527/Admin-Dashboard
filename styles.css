@@ -14,7 +14,43 @@ main {
 
 .header {
     grid-column: 2 / -1;
+    display: grid;
+    margin-left: 50px;
+    margin-top: 25px;
 }
+
+    .header-top {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 7rem 50% 1fr;
+    }
+
+    .header-top label:first-child {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .header-top input {
+        margin-top: 4px;
+        height: 30px;
+        border-radius: 15px;
+        border-style: none;
+        background-color: #C8C8C8;
+        font-size: 1.2rem;
+        padding-left: 10px;
+    }
+
+    .header-top input:focus {
+        outline: none;
+        background-color: #00BFFF;
+    }
+
+    .header-top div:last-child {
+        justify-self: end;
+        margin-right: 30px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
 .sidebar {
     grid-column: 1 / 2;
