@@ -22,12 +22,32 @@ main {
     background-color: #00BFFF;
     color: white;
     font-weight: bold;
-    
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    padding-left: 23%;
 }
 
-.sidebar div {
-    margin-left: 20px;
-}
+    .sidebar h1 {
+        margin-top: 20px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        font-size: 1.5rem;
+    }
+    
+    .sidebar ul li {
+        margin-bottom: 15px;
+    }
+
+    .list-one {
+        grid-row: 2 / 5;
+    }
+
+    .list-two {
+        grid-row: 5 / 6;
+    }
+
 
 .main-content {
     grid-column: 2 / -1;
