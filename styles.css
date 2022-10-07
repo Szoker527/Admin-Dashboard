@@ -266,39 +266,40 @@ main {
         grid-row: 1 / 2;
     }
 
-    .announc-title {
-        position: absolute;
-        top: -36px;
-        font-weight: bold;
-    }
+        .announc-title {
+            position: absolute;
+            top: -36px;
+            font-weight: bold;
+        }
 
-    .announc-panel {
-        background-color: white;
-        border-radius: 10px;
-        padding: 15px 25px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+        .announc-panel {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-    .announc-card {
-        padding: 15px;
-    }
+        .announc-card {
+            padding: 15px;
+        }
 
-    .announc-card div {
-        font-weight: bold;
-    } 
+        .announc-card div {
+            font-weight: bold;
+            font-size: 0.9rem;
+        } 
 
-    .announc-panel div:nth-child(2) {
-        border-top: 2px solid var(--background-color);
-        border-bottom: 2px solid var(--background-color);
-        border-radius: 0;
-    }
+        .announc-panel div:nth-child(2) {
+            border-top: 2px solid var(--background-color);
+            border-bottom: 2px solid var(--background-color);
+            border-radius: 0;
+        }
 
-    .announc-card p {
-        font-size: 0.8rem;
-        color: #374151;
-    }
+        .announc-card p {
+            font-size: 0.8rem;
+            color: #374151;
+        }
 
     .trending-panel {
         position: relative;
@@ -312,25 +313,31 @@ main {
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
 
-    .trending-title {
-        position: absolute;
-        top: -35px;
-        left: 0;
-        font-weight: bold;
-    }
-    
-    .trending-card {
-        padding-left: 20px;
-    }
+        .trending-title {
+            position: absolute;
+            top: -35px;
+            left: 0;
+            font-weight: bold;
+        }
 
-    .trending-card div {
-        font-weight: 550;
-        margin-bottom: 5px;
-    }
+        .trending-card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-    .trending-card p {
-        color: #374151;
-    }
+        .trending-card div {
+            font-weight: 550;
+            margin-bottom: 5px;
+        }
+
+        .trending-card p {
+            color: #374151;
+        }
+
+        .trending-icon {
+            width: 50px;
+        }
 
     /* Multiple styles on same elements */
 
