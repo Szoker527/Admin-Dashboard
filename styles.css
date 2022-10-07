@@ -209,6 +209,15 @@ main {
     background-color: var(--background-color);
     box-shadow: inset rgb(102 102 102 / 55%) 1px 1px 20px 0px;
 }
+
+    .big-font {
+        font-family: var(--bold-font);
+    }
+
+    .small-font {
+        font-family: var(--light-font);
+    }
+
     .project-title {
         position: absolute;
         top: 22px;
@@ -217,28 +226,39 @@ main {
     .projects {
         grid-row: span 2;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         column-gap: 20px;
         row-gap: 40px;
     }
 
-    .card {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        border-radius: 10px;
-        gap: 10px;
-        background-color: white;
-        border-left: 10px solid var(--second-color);
-    }
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 10px;
+            gap: 10px;
+            background-color: white;
+            border-left: 10px solid var(--second-color);
+        }
 
-    .card div:first-child {
-        font-weight: bolder;
-    }
+        .card div:first-child {
+            font-weight: bolder;
+        }
 
-    .card p {
-        color: #374151;
-    }
+        .card p {
+            color: #374151;
+            flex: 1;
+        }
+
+        .card-icons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .icons-card {
+            height: 25px;
+        }
 
     .announc {
         position:relative;
@@ -276,7 +296,7 @@ main {
     }
 
     .announc-card p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: #374151;
     }
 
