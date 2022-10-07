@@ -39,42 +39,69 @@ main {
 .header {
     grid-column: 2 / -1;
     display: grid;
-    margin-left: 60px;
-    margin-top: 25px;
+    margin-left: 24px;
+    font-family: var(--regular-font);
 }
 
     .header-top {
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: 7rem 50% 1fr;
+        grid-template-columns: 2rem 50% 1fr;
     }
 
-    .header-top label:first-child {
-        font-size: 2rem;
-        font-weight: bold;
-    }
+        .header-top label:first-child {
+            font-weight: bold;
+            display: grid;
+            align-items: center;
+            grid-auto-flow: column;
+        }
 
-    .header-top input {
-        margin-top: 4px;
-        height: 30px;
-        border-radius: 15px;
-        border-style: none;
-        background-color: var(--background-color);
-        font-size: 1.2rem;
-        padding-left: 10px;
-    }
+        .icon-search {
+            height: 25px;
+        }
 
-    .header-top input:focus {
-        outline: none;
-        background-color: var(--main-color);
-    }
+        .input-head {
+            display: grid;
+            align-items: center;
+            grid-auto-flow: column;
+        }
 
-    .header-top div:last-child {
-        justify-self: end;
-        margin-right: 30px;
-        font-size: 2rem;
-        font-weight: bold;
-    }
+        .input-head input {
+            height: 30px;
+            border-radius: 15px;
+            border-style: none;
+            background-color: var(--background-color);
+            font-size: 1.2rem;
+            padding-left: 10px;
+        }
+
+        .header-top input:focus {
+            outline: none;
+            background-color: var(--main-color);
+        }
+
+
+        .active-user {
+            display: grid;
+            align-items: center;
+            grid-auto-flow: column;
+            gap: 20px;
+        }
+
+        .icon-user {
+            height: 50px;
+        }
+
+        .icon-bell {
+            height: 30px;
+        }
+
+        .header-top div:last-child {
+            justify-self: end;
+            margin-right: 30px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
     .header-bottom {
         display: grid;
@@ -82,40 +109,43 @@ main {
         grid-template-columns: 55% 1fr;
     }
 
-    .current-user {
-        display: flex;
-        align-items: center;
-        gap: 3%;
-    }
+        .current-user {
+            display: flex;
+            align-items: center;
+            gap: 3%;
+        }
 
-    .dummy {
-        font-size: 2rem;
-        font-weight: bold;
-    }
+        .icon-current {
+            height: 65px;
+        }
 
-    .user-name {
-        font-size: 2rem;
-        font-weight: bold;
-    }
+        .user-name div:first-child {
+            font-size: 0.9rem;
+        }
 
-    .header-buttons {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        margin-right: 30px;
-        gap: 8%;
-    }
+        .user-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
 
-    .header-buttons button {
-        font-size: 1rem;
-        font-weight: bold;
-        height: 2.5rem;
-        width: 7rem;
-        border-radius: 15px;
-        border-style: none;
-        color: white;
-        background-color: var(--main-color);
-    }
+        .header-buttons {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin-right: 60px;
+            gap: 8%;
+        }
+
+        .header-buttons button {
+            font-size: 1rem;
+            font-weight: bold;
+            height: 2.5rem;
+            width: 7rem;
+            border-radius: 22px;
+            border-style: none;
+            color: white;
+            background-color: var(--main-color);
+        }
 
 .sidebar {
     grid-column: 1 / 2;
